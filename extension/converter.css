@@ -1,0 +1,18 @@
+:root { color-scheme: light; font: 14px/1.5 system-ui, sans-serif; color: #233447; background: #fff; }
+* { box-sizing: border-box; }
+body { width: 450px; margin: 0; padding: 22px; }
+header { display: flex; align-items: center; gap: 12px; padding-bottom: 18px; border-bottom: 1px solid #e1e8ee; }
+h1 { margin: 0; font-size: 18px; font-weight: 650; }
+header p { margin: 2px 0 0; color: #64748b; font-size: 11px; }
+h2 { margin: 18px 0 8px; font-size: 19px; }
+p { margin: 10px 0 14px; }
+label { display: block; margin-top: 14px; font-weight: 600; }
+input, select, button { width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #cbd5e1; border-radius: 6px; font: inherit; background: #fff; color: inherit; }
+input[type=file] { padding: 9px; }
+button { margin-top: 18px; color: #fff; background: #24689d; border-color: #24689d; cursor: pointer; font-weight: 600; }
+button:disabled { opacity: .6; cursor: wait; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #4a9ad2; outline-offset: 2px; }
+.hint { color: #64748b; font-size: 12px; }
+#status { overflow-wrap: anywhere; }
+#status[data-kind=error] { color: #b13c30; }
+#status[data-kind=success] { color: #297248; }

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AT Statistic Downloader</title>
+  <link rel="stylesheet" href="converter.css">
+</head>
+<body>
+  <header><img src="icons/icon48.png" width="40" height="40" alt=""><div><h1>AT Statistic Downloader</h1><p>Неофициальное расширение для Author.Today</p></div></header>
+  <main>
+    <h2>Объединить выгрузки</h2>
+    <p>Выберите сохранённые JSON. Отчёты попадут в один Excel или общий JSON. Книги и снимки останутся различимыми.</p>
+    <form id="converter-form">
+      <label for="files">JSON-файлы расширения</label>
+      <input id="files" type="file" accept=".json,application/json" multiple required>
+      <p class="hint">Поддерживаются отчёты с версии 0.3.0. Не более 100 отчётов и 20 МБ файлов за один раз.</p>
+      <label for="format">Формат результата</label>
+      <select id="format"><option value="xlsx">Excel (.xlsx)</option><option value="json">Общий JSON</option><option value="both">Excel и JSON</option></select>
+      <button id="save" type="submit">Объединить и скачать</button>
+    </form>
+    <p id="status" role="status" aria-live="polite"></p>
+    <p class="hint">Обработка происходит на устройстве. Расширение не отправляет выбранные файлы на сервер. Пересекающиеся периоды сохраняются отдельными снимками.</p>
+    <p class="hint">Чтобы получить новую статистику, откройте свой список произведений AT и нажмите «Скачать статистику» у книги.</p>
+  </main>
+  <script src="page-context.js"></script>
+  <script src="lib/xlsx.js"></script>
+  <script src="export-data.js"></script>
+  <script src="converter.js"></script>
+</body>
+</html>

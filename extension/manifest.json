@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "AT Statistic Downloader",
+  "short_name": "AT Statistics",
+  "version": "1.0.0",
+  "version_name": "1.0.0-beta",
+  "minimum_chrome_version": "120",
+  "description": "Неофициальный экспорт статистики Author.Today в Excel и JSON. Общая статистика, просмотры глав и время чтения.",
+  "action": {
+    "default_title": "AT Statistic Downloader — объединить JSON",
+    "default_popup": "converter.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://author.today/u/*/works/edit*"],
+      "js": ["page-context.js", "lib/xlsx.js", "export-data.js", "statistics-core.js", "statistics.js", "work-buttons.js"],
+      "css": ["work-buttons.css"],
+      "run_at": "document_idle",
+      "world": "MAIN",
+      "all_frames": false
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "isSuccessful": true,
+  "isWarning": false,
+  "messages": null,
+  "data": [
+    {
+      "date": "10.03.2042",
+      "totalViewCount": 137,
+      "uniqueViewCount": 91,
+      "spentTime": 2.49,
+      "commentCount": 2,
+      "likeCount": 2,
+      "libraryCount": 3
+    },
+    {
+      "date": "11.03.2042",
+      "totalViewCount": 104,
+      "uniqueViewCount": 69,
+      "spentTime": 0.4,
+      "commentCount": 5,
+      "likeCount": 3,
+      "libraryCount": -4
+    },
+    {
+      "date": "12.03.2042",
+      "totalViewCount": 117,
+      "uniqueViewCount": 78,
+      "spentTime": 0.5,
+      "commentCount": 1,
+      "likeCount": 4,
+      "libraryCount": 7
+    },
+    {
+      "date": "13.03.2042",
+      "totalViewCount": 130,
+      "uniqueViewCount": 87,
+      "spentTime": 0.6,
+      "commentCount": 4,
+      "likeCount": 0,
+      "libraryCount": 9
+    },
+    {
+      "date": "14.03.2042",
+      "totalViewCount": 209,
+      "uniqueViewCount": 140,
+      "spentTime": 3.89,
+      "commentCount": 0,
+      "likeCount": 1,
+      "libraryCount": 0
+    },
+    {
+      "date": "15.03.2042",
+      "totalViewCount": 227,
+      "uniqueViewCount": 152,
+      "spentTime": 4.24,
+      "commentCount": 3,
+      "likeCount": 2,
+      "libraryCount": 2
+    },
+    {
+      "date": "16.03.2042",
+      "totalViewCount": 292,
+      "uniqueViewCount": 195,
+      "spentTime": 4.9,
+      "commentCount": 6,
+      "likeCount": 3,
+      "libraryCount": 4
+    }
+  ]
+}
